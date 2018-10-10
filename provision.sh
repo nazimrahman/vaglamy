@@ -51,12 +51,3 @@ echo -e "\n--- Configure Apache ---\n"
 sudo chgrp -R www-data /var/www/html/marketplace
 sudo chmod -R 775 /var/www/html/marketplace/storage
 
-echo -e "\n--- Add environment variables ---\n"
-cat >> /home/vagrant/.bashrc <<EOF
-# Set envvars
-export APP_ENV=$APPENV
-export DB_HOST=$DBHOST
-export DB_NAME=$DBNAME
-export DB_USER=$DBUSER
-export DB_PASS=$DBPASSWD
-EOF
