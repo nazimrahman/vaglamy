@@ -40,7 +40,8 @@ sudo mv composer.phar /usr/local/bin/composer
 cd /var/www/html
 sudo composer create-project laravel/laravel marketplace --prefer-dist
 cd /etc/apache2/sites-available
-sudo cp /var/www/html/laravel.conf .
+sudo cp /var/www/laravel.conf .
+ls /etc/apache2/sites-available
 sudo a2dissite 000-default.conf
 sudo a2ensite laravel.conf
 sudo a2enmod rewrite
